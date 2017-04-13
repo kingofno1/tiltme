@@ -1,0 +1,20 @@
+{
+  "name": "angular-resource",
+  "version": "1.6.2-build.5241+sha.5b6763f",
+  "license": "MIT",
+  "main": "./angular-resource.js",
+  "ignore": [],
+  "dependencies": {
+    "angular": "1.6.2-build.5241+sha.5b6763f"
+  },
+  "homepage": "https://github.com/angular/bower-angular-resource",
+  "_release": "1.6.2-build.5241+sha.5b6763f",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.6.2-build.5241+sha.5b6763f",
+    "commit": "209ffed8466df9398e8fb1ecc16705e31326ad32"
+  },
+  "_source": "https://github.com/angular/bower-angular-resource.git",
+  "_target": "~1.6.2",
+  "_originalSource": "angular-resource"
+}

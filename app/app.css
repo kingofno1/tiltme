@@ -1,0 +1,60 @@
+/* app css stylesheet */
+body{
+   padding-left:20px;
+   padding-top: 20px;
+   background-color: #ecf0f1;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.summonerlist{
+   list-style: none;
+}
+
+.summonerlist li {
+  clear: both;
+  height: 115px;
+  padding-top: 15px;
+}
+
+.thumb{
+   float: left;
+   height: 100px;
+   margin: -0.5em 1em 1.5em 0;
+   padding-bottom: 1em;
+   width: 100px;
+}
+
+input {
+
+  border: 1px solid white;
+  height: 19px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  width: 200px;
+  float: left;
+  transition: border 0.2s ease-out;
+}
+

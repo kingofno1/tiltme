@@ -1,0 +1,29 @@
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-md-2">
+      <!--Sidebar content-->
+         <p>
+            Search:
+            <form ng-submit="submitsummoner()" >
+            <input type="text" ng-model="query" />
+            <input type="submit"/>
+            <pre> list = {{list}}</pre>
+            </form>
+         </p>
+      </div>
+   <div class="col-md-10">
+      <!--Body content-->
+      <h2> Summoner List </h2>
+      
+      <ul class="summonerlist">
+         <li ng-repeat="summoner in $ctrl.summonerList | orderBy:'':true" class="thumbnail">   
+            <a href="#!/summoner/{{summoner.summonername}}" class="thumb">
+               <img ng-src="{{summoner.imgUrl}}" alt="{{summoner.summonername}}"/>
+            </a>         
+            <a herf="#!/summoner/{{summoner.summonername}}"> {{summoner.summonername}}</a>
+            <p> </p>
+         </li>
+      </ul>
+    </div>
+ </div>
+</div>

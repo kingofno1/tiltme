@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp"> 
+<head>
+  <meta charset="utf-8">
+  <title>tiltMe.plz</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="app.css">
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="app.js"></script>
+  <script src="app.config.js"></script>
+  <script src="view1/view1.module.js"></script>
+  <script src="view1/view1.component.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="summoner-search/summoner-search.module.js"></script>
+  <script src="summoner-search/summoner-search.component.js"></script>
+  <script src="core/summoner/summoner.module.js"></script>
+  <script src="core/summoner/summoner.service.js"></script>
+  <script src="core/get-summoner/get-summoner.module.js"></script>  
+  <script src="core/get-summoner/get-summoner.service.js"></script>
+  <script src="summoner-detail/summoner-detail.module.js"></script>
+  <script src="summoner-detail/summoner-detail.component.js"></script>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="#!/view1">view1</a></li>
+    <li><a href="#!/view2">view2</a></li>
+    <li><a href="#!/summonerSearch">summsearch</a></li>
+  </ul>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-view></div>
+  
+  
+</body>
+</html>
