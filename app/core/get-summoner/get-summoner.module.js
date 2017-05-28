@@ -1,7 +1,7 @@
 'use strict'
 angular
    .module('core.get-summoner',['ngResource'])
-      .value('API_KEY', '                                ');
+      .value('API_KEY', '24624199-5731-4305-bd77-b049bb86b5d7');
                         // put lol api key here! ^  
 /*
 * *

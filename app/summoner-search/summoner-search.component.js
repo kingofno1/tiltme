@@ -37,7 +37,8 @@ angular.
             $scope.lolRequestlist = function()
             {  
                var lastelement = $scope.list[$scope.list.length-1];
-               var s = GetSummoner.get({summonerName: lastelement})
+
+               var s = GetSummoner.gimmeSummary().get({summonerName: lastelement})
                         .$promise.then(function (response)
                {
                   self.summ = response[lastelement];
@@ -46,11 +47,10 @@ angular.
                          +self.summ.profileIconId+'.png';
                          
                   self.summ.imgUrl = url;
-                  console.log(self.summ);
                   Summoner.setSummoner(self.summ.name, self.summ);
                   self.summ.summonername = self.summ.name;
                   self.summonerList.push(self.summ);
-                  console.log(self);
+
                });
             }            
          }]      
